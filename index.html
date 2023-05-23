@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- el Head o encabezado nos permite preconfigurar y configurar las propiedades y metadata asociada a nuestra pagina web -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Descargado -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- <h1>...</h1> (tamaños de H de 1 a 6)Etiqueta de titulo o encabezado de texto -->
+    <div class="container-fluid">
+        <h1>Hola soy un titulo</h1><br>
+        <h3>Hola soy un subtitulo</h3>
+        <a href="login.html"><button type="button" class="btn btn-secondary">Ir al login</button></a>
+
+
+        <!-- Enlace de hipervinculo -->
+        <a href="https://www.youtube.com">Ir a Youtube</a><br>
+
+        <!-- Imagen con ruta , mensaje de carga , ancho y largo  
+        Etiqueta inicial img
+        src para definir la ruta de donde se encuentra la imagen
+        alt mensaje de carga o mensaje en caso de que la imagen este corrupta o falle
+        width par definir ancho de la imagen
+        height para definir el alto de la imagen
+    
+    -->
+
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/test.gif" class="d-block w-50 mx-auto" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/test2.gif" class="d-block w-50 mx-auto" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/test3.gif" class="d-block w-50 mx-auto" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previo</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+
+
+        <img src="img/test.gif" alt="aun no cargo" width="150px" height="120px"><br>
+
+
+        <div class="center">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's
+            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+            make
+            a type specimen book. It has survived not only five centuries, but also the leap into electronic
+            typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+            containing
+            Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including
+            versions
+            of Lorem Ipsum <br>
+
+            <a href="index2.html">Ir a tercera pagina</a>
+        </div>
+
+        <a href="index2.html">Ir a segunda pagina</a>
+        <!--Lista sin orden <UL>-->
+        <ul>
+            <h4>Frutas</h4>
+            <li>Manzana</li>
+            <li>Platano</li>
+            <li>Frutilla</li>
+        </ul>
+        <!--Lista con orden  <OL>-->
+        <ol>
+            <h4>Verduras</h4>
+            <li>Lechuga</li>
+            <li>Cebolla</li>
+            <li>Zanahoria</li>
+        </ol>
+        <!-- Tabla 1 
+    table para generar la tabla
+    tr para generar la fila 
+    td para generar el item de la fila
+    
+    -->
+        <table class="table">
+            <tr>
+                <td>Campo 1</td>
+                <td>Campo 2</td>
+                <td>Campo 3</td>
+            </tr>
+            <tr>
+                <td>Campo 1</td>
+                <td>Campo 3</td>
+                <td>Campo 4</td>
+            </tr>
+            <tr>
+                <td>Campo 1</td>
+                <td>Campo 3</td>
+                <td>Campo 4</td>
+            </tr>
+        </table>
+        <hr>
+        <!-- Tabla 2 
+    similar a la tabla anterior pero con encabezado
+    thead para segmento de encabezado de tabla
+    tr para la fila 
+    th para elemento de encabezado
+
+    tbody para cuerpo de tabla
+    tr para fila
+    td para item de la fila 
+    -->
+        <table class="table table-striped table-dark">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Cantidad</th>
+                    <th>Precio</th>
+                    <th>eliminar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Manzana</td>
+                    <td>5</td>
+                    <td>3000</td>
+                    <td><button type="button" class="btn btn-primary fw-bold">Eliminar</button></td>
+                </tr>
+                <tr>
+                    <td>Manzana</td>
+                    <td>5</td>
+                    <td>3000</td>
+                    <td><button type="button" class="btn btn-primary fw-bold">Eliminar</button></td>
+                </tr>
+                <tr>
+                    <td>Manzana</td>
+                    <td>5</td>
+                    <td>3000</td>
+                    <td><button type="button" class="btn btn-primary fw-bold">Eliminar</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
